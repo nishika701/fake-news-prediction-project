@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake News Detector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📰 Fake News Detector</h1>
+    <textarea id="newsInput" placeholder="Paste a news article here..."></textarea>
+    <button onclick="checkNews()">Check News</button>
+    <p id="result"></p>
+  </div>
+  <div class="quiz-container">
+        <h1>Test Your Media Literacy</h1>
+        <p>Take this quiz to test your ability to identify fake news and learn how to be a more informed consumer of information.</p>
+        <form id="quiz-form">
+            <div class="question-block">
+                <p><strong>1. An article says, 'You won't believe what happened!' — what red flag is this?</strong></p>
+                <label><input type="radio" name="q1" value="A"> A) Emotional language / clickbait</label>
+                <label><input type="radio" name="q1" value="B"> B) Good grammar</label>
+                <label><input type="radio" name="q1" value="C"> C) Neutral headline</label>
+            </div>
+            <div class="question-block">
+                <p><strong>2. Which action helps you avoid misinformation?</strong></p>
+                <label><input type="radio" name="q2" value="A"> A) Always share immediately</label>
+                <label><input type="radio" name="q2" value="B"> B) Check multiple credible sources</label>
+                <label><input type="radio" name="q2" value="C"> C) Ignore headlines</label>
+            </div>
+            <div class="question-block">
+                <p><strong>3. What is the primary goal of most fake news?</strong></p>
+                <label><input type="radio" name="q3" value="A"> A) To inform the public accurately</label>
+                <label><input type="radio" name="q3" value="B"> B) To entertain</label>
+                <label><input type="radio" name="q3" value="C"> C) To mislead for financial or political gain</label>
+            </div>
+            <div class="question-block">
+                <p><strong>4. A news story with a headline that uses all capital letters and excessive punctuation (e.g., 'SHOCKING NEWS!!!') is likely an example of:</strong></p>
+                <label><input type="radio" name="q4" value="A"> A) A professional news report</label>
+                <label><input type="radio" name="q4" value="B"> B) A sensationalized, untrustworthy source</label>
+                <label><input type="radio" name="q4" value="C"> C) An academic article</label>
+            </div>
+            <div class="question-block">
+                <p><strong>5. Before sharing a post, you should ask yourself:</strong></p>
+                <label><input type="radio" name="q5" value="A"> A) Will this get a lot of likes?</label>
+                <label><input type="radio" name="q5" value="B"> B) Is this a well-known person's opinion?</label>
+                <label><input type="radio" name="q5" value="C"> C) Have I verified this information from a second, reliable source?</label>
+            </div>
+            <button type="submit">Submit Answers</button>
+        </form>
+        <div id="results" class="results-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
